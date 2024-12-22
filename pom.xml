@@ -43,16 +43,52 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-		<dependency>
+		 <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+       
+        <scope>test</scope>
+    
+	</dependency>
+
+    <!-- JSON Path Dependency (needed for extracting data from JSON response) -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-path</artifactId>
+       
+        <scope>test</scope>
+    </dependency>
+
+    <!-- XML Path Dependency (if you plan to handle XML responses) -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>xml-path</artifactId>
+       
+        <scope>test</scope>
+    </dependency>
+
+    <!-- AssertJ Dependency (for assertions in tests) -->
+    <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+      
+        <scope>test</scope>
+    </dependency>
+	 <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.4.0</version> <!-- You can change the version as required -->
+        <scope>test</scope>
+    </dependency>
+	<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.22</version>
 			<scope>provided</scope>
 		</dependency>
+</dependencies>
 
-	</dependencies>
 
+	
 	<build>
 		<plugins>
 			<plugin>

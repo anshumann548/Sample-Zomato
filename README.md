@@ -14,3 +14,6 @@ The server will start at port 9001
 
 # How to run the tests
 ./mvnw test  
+
+#How to run test.java file 
+./mvnw -Dtest=com.springboot.test -q process-test-classes surefire:test
