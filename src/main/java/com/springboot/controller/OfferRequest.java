@@ -1,17 +1,51 @@
 package com.springboot.controller;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.util.List;
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class OfferRequest {
-    private int restaurant_id;
-    private String offer_type;
-    private int offer_value;
 
-    private List<String> customer_segment;
+public class OfferRequest {
+    private int userId;
+    private String offerType;
+    private int offerValue;
+    private List<String> segments;
+
+    // Constructor
+    public OfferRequest(int userId, String offerType, int offerValue, List<String> segments) {
+        this.userId = userId;
+        this.offerType = offerType;
+        this.offerValue = offerValue;
+        this.segments = segments;
+    }
+
+    // Getters and Setters (if needed)
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getOfferType() {
+        return offerType;
+    }
+
+    public void setOfferType(String offerType) {
+        this.offerType = offerType;
+    }
+
+    public int getOfferValue() {
+        return offerValue;
+    }
+
+    public void setOfferValue(int offerValue) {
+        this.offerValue = offerValue;
+    }
+
+    public List<String> getSegments() {
+        return segments;
+    }
+
+    public void setSegments(List<String> segments) {
+        this.segments = segments;
+    }
 }
