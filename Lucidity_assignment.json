@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "8d5a780e-7a40-4c29-a3f3-007c8ab69424",
+		"name": "Zomato API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40562436"
+	},
+	"item": [
+		{
+			"name": "Mocking API",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add offer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Apply offer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
