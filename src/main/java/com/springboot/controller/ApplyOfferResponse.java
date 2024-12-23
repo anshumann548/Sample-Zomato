@@ -1,10 +1,24 @@
 package com.springboot.controller;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
 public class ApplyOfferResponse {
-    private int cart_value;
+    private int updatedCartValue;
+
+    public ApplyOfferResponse(int updatedCartValue) {
+        this.updatedCartValue = updatedCartValue;
+    }
+
+    public int getUpdatedCartValue() {
+        return updatedCartValue;
+    }
+
+    public void setUpdatedCartValue(int updatedCartValue) {
+        this.updatedCartValue = updatedCartValue;
+    }
+
+    @Override
+    public String toString() {
+        return "ApplyOfferResponse{" +
+                "updatedCartValue=" + updatedCartValue +
+                '}';
+    }
 }

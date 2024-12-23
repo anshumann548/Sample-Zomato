@@ -1,10 +1,31 @@
 package com.springboot.controller;
 
-import lombok.Data;
-
-@Data
 public class ApplyOfferRequest {
-    private int cart_value;
-    private int restaurant_id;
-    private int user_id;
+    private int userId;
+    private int restaurantId;
+    private int cartValue;
+
+    public int getUser_id() {
+        return userId;
+    }
+
+    public void setUser_id(int userId) {
+        this.userId = userId;
+    }
+
+    public int getRestaurant_id() {
+        return restaurantId;
+    }
+
+    public void setRestaurant_id(int restaurantId) {
+        this.restaurantId = restaurantId;
+    }
+
+    public int getCart_value() {
+        return cartValue;
+    }
+
+    public void setCart_value(int cartValue) {
+        this.cartValue = cartValue;
+    }
 }
